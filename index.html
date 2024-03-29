@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In & Sign Up</title>
+
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- css link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- preloader -->
+    <div id="preloader"></div>
+
+    <!-- navbar -->
+    <div class="container">
+      <div class="nav_log">
+        <div class="logo">
+          <a href="">
+            <img src="./assets/img/Horizontal Logo Indigo.png" alt="Logo" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- signup  and sign in starts -->
+    <div class="sigin_up py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-sm-12 mb-3">
+            <div class="left">
+              <h2 class="mb-3">
+                <span class="sign_title active">Sign in to</span>
+                <span class="reg_title">Sign Up to</span>
+              </h2>
+              <p class="sign_txt active">If you don’t have an account</p>
+              <p class="reg_txt">If you already registered</p>
+              <div class="img d-flex">
+                <div class="txt">
+                  <span class="reg_here active" onclick="signUp()">
+                    Register here ! </span
+                  ><span class="log_here" onclick="signIn()"
+                    >Log In here !</span
+                  >
+                </div>
+                <img src="./assets/img/Saly-14.png" alt="" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-sm-12">
+            <div class="form">
+              <div class="switching">
+                <h4 class="active switch_btn_in" onclick="signIn()">Sign in</h4>
+                <h4 class="switch_btn_up" onclick="signUp()">Sign up</h4>
+              </div>
+              <div class="sign_in active">
+                <form action="">
+                  <input type="email" name="" id="" placeholder="Enter email" />
+                  <input type="password" name="" id="" placeholder="Password" />
+                  <a href="">Forgot Password ?</a>
+                  <button type="submit">
+                    <a href="./chat.html" class="login_btn">Login</a>
+                  </button>
+                </form>
+                <p>Or continue with</p>
+                <div class="social">
+                  <a href=""
+                    ><img src="./assets/img/Facebook.png" alt="Facebook Icon"
+                  /></a>
+                  <a href=""
+                    ><img src="./assets/img/apple.png" alt="Apple Icon"
+                  /></a>
+                  <a href="">
+                    <img src="./assets/img/google.png" alt="Googlw Icon"
+                  /></a>
+                </div>
+              </div>
+              <div class="sign_up">
+                <form action="">
+                  <input type="text" name="" id="" placeholder="First name" />
+                  <input type="text" name="" id="" placeholder="Last name" />
+                  <input type="text" name="" id="" placeholder="User name" />
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Business name"
+                  />
+                  <input type="email" name="" id="" placeholder="Enter email" />
+                  <input type="password" name="" id="" placeholder="Password" />
+                  <button type="submit">
+                    <a href="./chat.html" class="reg_btn">Register</a>
+                  </button>
+                </form>
+                <p>Or continue with</p>
+                <div class="social">
+                  <a href=""
+                    ><img src="./assets/img/Facebook.png" alt="Facebook Icon"
+                  /></a>
+                  <a href=""
+                    ><img src="./assets/img/apple.png" alt="Apple Icon"
+                  /></a>
+                  <a href="">
+                    <img src="./assets/img/google.png" alt="Googlw Icon"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- signup  and sign in ends -->
+
+
+    <!-- js -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
